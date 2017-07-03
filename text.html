@@ -7,28 +7,20 @@
     <title>Document</title>
     <style type="text/css">
         .box {
-            /*非IE的主流浏览器识别的垂直居中的方法*/
-            display: table-cell;
-            vertical-align:middle;
-            /*设置水平居中*/
-            text-align:center;
-            /* 针对IE的Hack */
-            *display: block;
-            *font-size: 175px;/*约为高度的0.873，200*0.873 约为175*/
-            *font-family:Arial;/*防止非utf-8引起的hack失效问题，如gbk编码*/
-            width:200px;
-            height:200px;
-            border: 1px solid #eee;
+            width: auto;
+            height: 200px;
+            border: 1px solid red;
             }
-            .box img {
-            /*设置图片垂直居中*/
-            vertical-align:middle;
+        .box1 {
+            margin-top: 10px;
+            width: auto;
+            height: 200px;
+            border: 1px solid red;
             }
     </style>
 </head>
 <body>
-    <div class="box">
-        <img src="img/logo.png" />
-    </div> 
+    <div class="box"></div> 
+    <div class="box1"></div> 
 </body>
 </html>
