@@ -1,72 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style type="text/css">
-        body{
+        body {
             margin: 0;
         }
-        #box1{
+
+
+        #box1 {
             position: relative;
             width: auto;
             height: 80px;
             background-image: url(img/125646166.png);
         }
-        #box2{
-            width:auto;
+
+        #box2 {
+            width: auto;
             height: 50px;
             background-image: url(img/header_nav_bg.png);
-            background-position-x: center;/*背景图片水平居中*/
+            background-position-x: center;
+            /*背景图片水平居中*/
         }
-        a{
+
+        a {
             text-decoration: none;
             color: #fff;
         }
         /*头部样式*/
-        #logoImg{
+
+        #logoImg {
             position: absolute;
             left: 60px;
             top: 12px;
         }
-        #hline{
+
+        #hline {
             position: absolute;
-            bottom:12px;
-            left: 300px; 
+            bottom: 12px;
+            left: 300px;
             color: #4bacfe;
         }
-        #hline>a{
+
+        #hline>a {
             color: #4bacfe;
             font-size: 15px;
         }
-        #hline>a:hover{
-            text-decoration:underline;
+
+        #hline>a:hover {
+            text-decoration: underline;
         }
-        #diban{
+
+        #diban {
             position: absolute;
             left: 500px;
         }
-        #denglu{
+
+        #denglu {
             font-size: 15px;
             color: #4bacfe;
             position: absolute;
             bottom: 16px;
-            left:1180px;
+            left: 1180px;
         }
-        #denglu>a{
+
+        #denglu>a {
             color: #fff;
             text-decoration: none;
-            margin-top:-17px;
+            margin-top: -17px;
         }
-        #denglu>#circle:hover{
+
+        #denglu>#circle:hover {
             background-color: darkblue;
         }
-        #denglu>#huiyuan:hover{
+
+        #denglu>#huiyuan:hover {
             color: #fbe512;
         }
-        #circle{
+
+        #circle {
             float: right;
             display: block;
             border-radius: 50%;
@@ -77,106 +93,197 @@
             cursor: pointer;
             background-color: #015ea1;
         }
-         /*导航栏样式*/
-         #box2>ul{
-             list-style: none;
-             margin: 0;
-             font-size: 18px;
-             color:#fff;
-             padding: 0;
-            }
-         #box2>ul>li{
+        /*导航栏样式*/
+
+        #box2>ul {
+            list-style: none;
+            margin: 0;
+            font-size: 18px;
+            color: #fff;
+            padding: 0;
+        }
+
+        #box2>ul>li {
             display: inline-block;
             line-height: 50px;
             width: 78px;
             text-align: right;
             /*margin: 0 20px 0 20px;*/
             position: relative;
-         }
-        
-         li>div{
+        }
+
+        li>div {
             width: 20px;
             height: 15px;
             background-image: url(http://mat1.gtimg.com/sports/nba2015_statics/public/header_nav_sprite.png);
             /*border: 1px solid black;*/
-         }
+        }
 
-         li>a:hover{
-              color: #4bacfe;
-         }
+        li>a:hover {
+            color: #4bacfe;
+        }
 
+        #slogo1 {
+            position: absolute;
+            left: 9px;
+            top: 17px;
+            background-position: -21px 0px;
+        }
 
-         #slogo1{
-             position: absolute;
-             left: 9px;
-             top: 17px;
-             background-position: -21px 0px;
-         }
-         #slogo1:hover + a{
-             background-position: 0px 0px;
-             color: #4bacfe;
-         }
-         #slogo1:hover{
-             background-position: 0px 0px;
-         }
-         /*#li1:hover + #slogo1{/*行不通*/
-             /*background-position: 0px 0px;
+        #slogo1:hover+a {
+            background-position: 0px 0px;
+            color: #4bacfe;
+        }
+
+        #slogo1:hover {
+            background-position: 0px 0px;
+        }
+        /*#li1:hover + #slogo1{/*行不通*/
+        /*background-position: 0px 0px;
          }*/
 
-         #slogo2{
-             position: absolute;
-             left: 9px;
-             top: 17px;
-             background-position: -21px -16px;
-         }
-         #slogo2:hover + a{
-             /*background-position: 0px 0px;*/
-             color: #4bacfe;
-         }
-         #slogo2:hover{
-             background-position: 0px -16px;
-         }
+        #slogo2 {
+            position: absolute;
+            left: 9px;
+            top: 17px;
+            background-position: -21px -16px;
+        }
+
+        #slogo2:hover+a {
+            /*background-position: 0px 0px;*/
+            color: #4bacfe;
+        }
+
+        #slogo2:hover {
+            background-position: 0px -16px;
+        }
 
 
-         #slogo3{
-             position: absolute;
-             left: 9px;
-             top: 17px;
-             background-position: -21px -32px;
-         }
-         #slogo3:hover + a{
-             /*background-position: 0px 0px;*/
-             color: #4bacfe;
-         }
-         #slogo3:hover{
-             background-position: 0px -32px;
-         }
-        
+        #slogo3 {
+            position: absolute;
+            left: 9px;
+            top: 17px;
+            background-position: -21px -32px;
+        }
+
+        #slogo3:hover+a {
+            /*background-position: 0px 0px;*/
+            color: #4bacfe;
+        }
+
+        #slogo3:hover {
+            background-position: 0px -32px;
+        }
+        /*轮播图*/
+
+        #turns {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        #turnarea {
+            /*border: 1px solid red;*/
+            width: 1258px;
+            height: 400px;
+            overflow: hidden;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        #oul {
+            position: relative;
+        }
+
+        .turnImg {
+            margin: 0 5px;
+        }
+        /*方向键*/
+
+        #leftbox {
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            left: 10px;
+            top: 160px;
+            overflow: hidden;
+            z-index: 999;
+        }
+
+        #leftbox>img {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
+
+        #leftbox:hover,
+        #rightbox:hover {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        #rightbox {
+            width: 50px;
+            height: 80px;
+            position: absolute;
+            overflow: hidden;
+            right: 10px;
+            top: 160px;
+        }
+
+        #rightbox>img {
+            position: absolute;
+            top: -182px;
+            left: 14px;
+        }
+        /*选项卡*/
+
+        #news {
+            width: 360px;
+            height: 170px;
+            background-color: #014576;
+            white-space: nowrap;
+            position: absolute;
+            left: 370px;
+            top: 130px;
+            display: none;
+        }
+
+        p {
+            margin-left: 5PX;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        P:hover {
+            color: #0088e1;
+        }
     </style>
 </head>
+
 <body>
     <div>
-         <div id="box1">
+        <div id="box1">
             <img src="img\logo.png" id="logoImg">
             <div id="hline">
                 <a href="http://www.qq.com/">腾讯网</a>
-                <a href="http://www.qq.com/">腾讯体育</a>
-                |
+                <a href="http://www.qq.com/">腾讯体育</a> |
                 <a href="http://www.qq.com/">NBA中文网</a>
             </div>
             <a href="http://nba.stats.qq.com/schedule/"><img src="img/144190665.png" id="diban"></a>
             <div id="denglu">
-               <a href="http://sports.qq.com/vip/" id="huiyuan">开通会员</a>&nbsp&nbsp
-               <a id="circle">登陆</a>
+                <a href="http://sports.qq.com/vip/" id="huiyuan">开通会员</a>&nbsp&nbsp
+                <a id="circle">登陆</a>
             </div>
-          </div>
-          <div id="box2">
-            <ul>   
+        </div>
+        <div id="box2">
+            <ul>
                 <li><a href="http://sports.qq.com/nba/">首页</a></li>
-                <li id="li1"><div id="slogo1"></div><a href="http://sports.qq.com/nba/">视频</a></li>
-                <li id="li2"><div id="slogo2"></div><a href="http://sports.qq.com/nba/">直播</a></li>
-                <li id="li3"><div id="slogo3"></div><a href="http://sports.qq.com/nba/">图片</a></li>
-                <li><a href="http://sports.qq.com/nba/">新闻</a></li>
+                <li id="li1">
+                    <div id="slogo1"></div><a href="http://sports.qq.com/nba/">视频</a></li>
+                <li id="li2">
+                    <div id="slogo2"></div><a href="http://sports.qq.com/nba/">直播</a></li>
+                <li id="li3">
+                    <div id="slogo3"></div><a href="http://sports.qq.com/nba/">图片</a></li>
+                <li><a href="http://sports.qq.com/nba/" id="newMessgge">新闻</a></li>
                 <li><a href="http://sports.qq.com/nba/">球员</a></li>
                 <li><a href="http://sports.qq.com/nba/">球队</a></li>
                 <li><a href="http://sports.qq.com/nba/">赛程</a></li>
@@ -188,12 +295,103 @@
                 <li><a href="http://sports.qq.com/nba/">评论</a></li>
                 <li><a href="http://sports.qq.com/nba/">更多</a></li>
             </ul>
-         </div>
+        </div>
+        <div id="turns">
+            <div id="turnarea">
+                <div id="leftbox">
+                    <img src="img\大轮播图\focus_control_btn.png">
+                </div>
+                <div id="oul">
+                    <img class="turnImg" src="img\大轮播图\0.png">
+                    <img class="turnImg" src="img\大轮播图\0 (2).jpg">
+                    <img class="turnImg" src="img\大轮播图\0 (4).jpg">
+                    <img class="turnImg" src="img\大轮播图\0 (3).jpg">
+                    <img class="turnImg" src="img\大轮播图\0 (5).jpg">
+                    <img class="turnImg" src="img\大轮播图\0 (6).jpg">
+                    <img class="turnImg" src="img\大轮播图\0 (7).jpg">
+                    <img class="turnImg" src="img\大轮播图\0 (8).jpg">
+                </div>
+                <div id="rightbox">
+                    <img src="img\大轮播图\focus_control_btn.png" id="rightgo">
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="news">
+        <a href="#">
+            <p>在2012年美国队的12人名单里，已经有8人易主，</p>
+        </a>
+        <a href="#">
+            <p>分别是詹姆斯（当时效力热火）、乐福（当时效力森林狼）</p>
+        </a>
+        <a href="#">
+            <p>德隆-威廉姆斯（当时在篮网）、伊戈达拉（当时效力76人）</p>
+        </a>
+        <a href="#">
+            <p>哈登（当时效力雷霆）、保罗（当时效力快船）、 泰森-钱德勒（当时效力尼克斯），</p>
+        </a>
+        <a href="#">
+            <p>除了钱德勒外，剩余的成员均呈现出抱团迹象。</p>
+        </a>
+    </div>
+
+
     <script type="text/javascript">
-        window.addEventListener("load",function(){
-        
+        window.addEventListener("load", function () {
+            var oul = document.getElementById("oul");
+            var aimg = document.getElementsByClassName("turnImg")
+            var leftbox = document.getElementById("leftbox");
+            var rightbox = document.getElementById("rightbox");
+            oul.innerHTML = oul.innerHTML + oul.innerHTML;
+            oul.style.width = (aimg[0].offsetWidth + 18) * aimg.length + 'px';
+            var ispeed = 5;
+
+            //轮播图
+            leftbox.addEventListener('click', function () {
+                ispeed = Math.abs(ispeed);
+                console.log("zuo")
+            })
+            rightbox.addEventListener('click', function () {
+                ispeed = -Math.abs(ispeed);
+                console.log("you")
+            })
+
+            setInterval(function () {
+                oul.style.left = oul.offsetLeft - ispeed + "px";
+                if (oul.offsetLeft < -oul.offsetWidth / 2) {
+                    oul.style.left = 0 + "px";
+                } else if (oul.offsetLeft > 0) {
+                    oul.style.left = -oul.offsetWidth / 2 + "px";
+                }
+            }, 50)
+
+            //选项卡
+            var timer = null;
+            var news = document.getElementById('news');
+            var newBtn = document.getElementById("newMessgge");
+            var ap=news.getElementsByTagName('p');
+            for(var i=0;i<ap.length;i++){
+                ap[i].title =ap[i].innerHTML;
+            }
+            newBtn.addEventListener('mouseover', function () {
+                clearInterval(timer);
+                news.style.display = 'block';
+            })
+            newBtn.addEventListener('mouseout', function () {
+                timer = setInterval(function () {
+                    news.style.display = 'none';
+                }, 1000)
+            })
+            news.addEventListener('mouseover', function () {
+                clearInterval(timer);
+                news.style.display = 'block';
+            })
+            news.addEventListener('mouseout', function () {
+                news.style.display = 'none';
+            })
+
         })
     </script>
 </body>
+
 </html>
