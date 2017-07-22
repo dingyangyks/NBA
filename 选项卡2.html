@@ -42,7 +42,7 @@
         }
 
         .desk>ul {
-            white-space: nowrap;
+            white-space: nowrap;/*强制不换行*/
             margin: 0;
         }
 
@@ -139,59 +139,68 @@
         window.addEventListener('load', function () {
             var provs = document.getElementsByClassName('pro');
             var city = document.getElementsByClassName('desk');
+
             var oul = document.getElementsByClassName('oul');
-
-
             var ap = document.getElementsByTagName('p');
             for (var i = 0; i < ap.length; i++) {
                 ap[i].title = ap[i].innerHTML;
             }
-
+            
+            //操作标题栏
             for (var i = 0; i < provs.length; i++) {
                 provs[i].index = i;
                 var timer = null;
+                //鼠标进入标题栏
                 provs[i].addEventListener('mouseover', function () {
                     clearInterval(timer);
+                    //变色
                     for (var i = 0; i < provs.length; i++) {
                         provs[i].style.backgroundColor = "";//先把所有样式清空
                     }
                     this.style.backgroundColor = "#a35835";//然后再给滑过的元素设置样式
 
-                   
+                    //显示对应的desk
                     for (var j = 0; j < city.length; j++) {
-                        city[j].index = j
                         city[j].classList.remove('show');//先把所有有关的类名清空
-                        city[j].addEventListener('mouseover', function () {
-                            clearInterval(timer);
-                            this.classList.add('show');
-                            for (var i = 0; i < provs.length; i++) {
-                                provs[i].style.backgroundColor = "";//先把所有样式清空
-                            }
-                             provs[this.index].style.backgroundColor = "#a35835";
-                        })
                     }
                     city[this.index].classList.add('show');//然后再给划过的元素设置类名
                 })
-
+                //鼠标移除标题栏
                 provs[i].addEventListener('mouseout', function () {
+                    //延迟消失
                     timer = setInterval(function () {
+                        //恢复标题栏颜色
                         for (var i = 0; i < provs.length; i++) {
                             provs[i].style.backgroundColor = "";//先把所有样式清空
                         }
+                        //隐藏desk
                         for (var j = 0; j < city.length; j++) {
                             city[j].classList.remove('show');
                         }
                     }, 1000)
                 })
-                for (var j = 0; j < city.length; j++) {
-                    city[j].classList.remove('show');
-                    city[j].addEventListener('mouseout', function () {
-                        this.classList.remove('show');
-                        for (var i = 0; i < provs.length; i++) {
-                            provs[i].style.backgroundColor = "";//先把所有样式清空
-                        }
-                    })
-                }
+            }
+
+            //操作desk
+            for (var j = 0; j < city.length; j++) {
+                city[j].index = j
+                city[j].classList.remove('show');//先把所有有关的类名清空
+                //鼠标移入desk
+                city[j].addEventListener('mouseover', function () {
+                    clearInterval(timer);
+                    this.classList.add('show');
+                    for (var i = 0; i < provs.length; i++) {
+                        provs[i].style.backgroundColor = "";//先把所有样式清空
+                    }
+                    provs[this.index].style.backgroundColor = "#a35835";
+                })
+                //鼠标移除desk
+                city[j].addEventListener('mouseout', function () {
+                    this.classList.remove('show');
+                    for (var i = 0; i < provs.length; i++) {
+                        provs[i].style.backgroundColor = "";//先把所有样式清空
+                    }
+                })
             }
         })
     </script>
