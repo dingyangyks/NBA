@@ -325,34 +325,40 @@
             padding: 0;
             line-height: 25px;
         }
-        .words{
+
+        .words {
             width: 410px;
             height: auto;
             background-color: #014576;
             border-top: 1px solid #4bacfe;
             display: none;
         }
-        .show{
+
+        .show {
             display: block;
         }
-        .words>li{
+
+        .words>li {
             font-size: 18px;
-            padding:1px 10px;
+            padding: 1px 10px;
             white-space: nowrap;
             cursor: pointer;
         }
-         .words>li:hover{
-             background-color: #4bacfe;
-             color:black;
-         }
-        .words>li>p{
+
+        .words>li:hover {
+            background-color: #4bacfe;
+            color: black;
+        }
+
+        .words>li>p {
             text-overflow: ellipsis;
             overflow: hidden;
             padding-top: 5px;
             margin: 0 12px 12px 12px;
             color: #fff;
         }
-        #li1{
+
+        #li1 {
             background-color: #0c71e4;
         }
     </style>
@@ -489,7 +495,7 @@
                         <p>延安：红色革命根据地，是当时共产党养精蓄锐的地方。</p>
                     </li>
                 </ul>
-                  <ul class="words">
+                <ul class="words">
                     <li>
                         <p> 买两斤至少该送一斤啊，怎么买得越多，送得越少呢？”</p>
                     </li>
@@ -580,56 +586,56 @@
             news.addEventListener('mouseout', function () {
                 news.style.display = 'none';
             })
-            
+
             //选项卡
             var sub = document.getElementById('subject');
-            var ali =sub.getElementsByTagName('li');
-            var aps=document.getElementsByTagName('p');
-            var aword=document.getElementsByClassName('words');
+            var ali = sub.getElementsByTagName('li');
+            var aps = document.getElementsByTagName('p');
+            var aword = document.getElementsByClassName('words');
             console.log(aps.length)
 
-            for(var i=0;i<aps.length;i++){
+            for (var i = 0; i < aps.length; i++) {
                 aps[i].title = aps[i].innerHTML;
             }
 
-            for(var i=0;i<ali.length;i++){
+            for (var i = 0; i < ali.length; i++) {
                 ali[i].index = i;
-                  //鼠标进入标题栏
-                ali[i].addEventListener('mouseover',function(){
-                    for(var  i=0;i<ali.length;i++){
-                         ali[i].style.backgroundColor = '#014576';
+                //鼠标进入标题栏
+                ali[i].addEventListener('mouseover', function () {
+                    for (var i = 0; i < ali.length; i++) {
+                        ali[i].style.backgroundColor = '#014576';
                     }
-                     this.style.backgroundColor = '#0c71e4';
-                     for(var j=0;j<aword.length;j++){
-                         aword[j].classList.remove('show');
-                     }
-                     aword[this.index].classList.add('show');
+                    this.style.backgroundColor = '#0c71e4';
+                    for (var j = 0; j < aword.length; j++) {
+                        aword[j].classList.remove('show');
+                    }
+                    aword[this.index].classList.add('show');
                 })
                 //鼠标移除标题栏
-                ali[i].addEventListener('mouseout',function(){
-                    for(var  i=0;i<ali.length;i++){
-                         ali[i].style.backgroundColor = '#014576';
+                ali[i].addEventListener('mouseout', function () {
+                    for (var i = 0; i < ali.length; i++) {
+                        ali[i].style.backgroundColor = '#014576';
                     }
-                     this.style.backgroundColor = '#0c71e4';
+                    this.style.backgroundColor = '#0c71e4';
                 })
             }
             //保持颜色
-            for(var i=0;i<aword.length;i++){
+            for (var i = 0; i < aword.length; i++) {
                 aword[i].index = i;
-                aword[i].addEventListener('mouseover',function(){
-                    for(var j=0;j<ali.length;j++){
+                aword[i].addEventListener('mouseover', function () {
+                    for (var j = 0; j < ali.length; j++) {
                         ali[j].style.backgroundColor = '#014576';
                     }
-                     ali[this.index].style.backgroundColor = '#0c71e4';
+                    ali[this.index].style.backgroundColor = '#0c71e4';
                 })
-                aword[i].addEventListener('mouseout',function(){
-                    for(var j=0;j<ali.length;j++){
+                aword[i].addEventListener('mouseout', function () {
+                    for (var j = 0; j < ali.length; j++) {
                         ali[j].style.backgroundColor = '#014576';
                     }
                     ali[this.index].style.backgroundColor = '#0c71e4';
                 })
             }
-            
+
         })
     </script>
 </body>
