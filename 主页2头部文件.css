@@ -1,0 +1,451 @@
+body{
+    margin: 0;
+    min-width:1010px;
+}
+
+/*最上层logo*/
+#box1{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color:#005CA1;  
+    background-image:url(http://img1.gtimg.com/sports/pics/hv1/16/70/1932/125646166.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    font-family: Arial,"Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+}
+
+@media screen and (max-width:1260px){
+    #box1{
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-image:url(http://img1.gtimg.com/sports/pics/hv1/130/21/1899/123487960.png);
+    }
+}
+
+.ten{
+    width: 1240px;
+    margin: 0 auto;
+    
+}
+
+.ten>a{
+    /*解决a标签包裹img问题*/
+    font-size: 0;
+    vertical-align: top;
+}
+
+.ten>a>img{
+    position: relative;
+    left: 30px;
+    vertical-align: top;
+}
+
+
+@media screen and (max-width:1260px){
+    .ten{
+        /*要想padding自动改变padding只会把值定死 在这里只能改变元素的内容宽度*/
+        width: 1000px;
+        /*padding: 0 122px;*/
+    }
+    .ten>a>img{
+        display: none;
+    }
+}
+
+.ten>img{
+    margin-top: 12px;
+    float: left;
+    cursor: pointer;
+}
+
+.hline{
+    float: left;
+    padding-top: 52px;
+    padding-left: 35px;
+    color: #4bacfe;
+}
+.hline>a{
+    text-decoration: none;
+    color: #4bacfe;
+}
+.hline>a:hover{
+    text-decoration: underline;
+}
+
+.denglu{
+    float: right;
+    /*display: inline-block;*/
+    width: 190px;
+    height: 100%;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.denglu>#circle{
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color:#015ea1;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.denglu>#circle:hover{
+    background-color:#024677
+}
+
+.denglu>#vip{
+    text-decoration: none;
+    color: #fff;
+    line-height: 52px;
+    display: block;
+    float: right;
+}
+
+.denglu>#vip:hover{
+     color: #fbe512;
+}
+
+/*导航栏*/
+#box2{
+    width: auto;
+    height: 50px;
+    background-image: url(img/header_nav_bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width:1260px){
+    #box2{
+        background-image: url(http://mat1.gtimg.com/sports/nba2015_statics/public/header_nav_bg_1k.png)
+    }
+}
+
+.breakpoint{
+    width: 1240px;
+    /*因为他的子元素都浮动了，所以没有高度*/
+    margin: 0 auto;
+}
+
+.breakpoint>ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    float: left;
+}
+
+.breakpoint>ul>li{
+    line-height: 50px;
+    float: left;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.breakpoint>ul>li>a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.breakpoint>ul>li>a:hover{
+    color: #4bacfe;
+}
+
+#slogo1,#slogo2,#slogo3{
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+    margin-top: 17px;
+    background-image: url(http://mat1.gtimg.com/sports/nba2015_statics/public/header_nav_sprite.png);
+    /*border: 1px solid black;*/
+}
+
+#slogo1 {
+    background-position: -21px 0px;
+}
+
+#li1:hover > #slogo1{
+    background-position: 0px 0px;
+}
+
+#li1:hover > a{
+     color: #4bacfe;
+}
+
+#slogo2 {
+    background-position: -21px -16px;
+}
+
+#li2:hover > #slogo2{
+     background-position: 0px -16px;
+}
+
+#li2:hover > a{
+     color: #4bacfe;
+}
+
+#slogo3 {
+    background-position: -21px -32px;
+}
+
+#li3:hover > #slogo3{
+     background-position: 0px -32px;
+}
+
+#li3:hover > a{
+     color: #4bacfe;
+}
+
+.arrows{
+    display: inline-block;
+    vertical-align: top;
+    width: 6px;
+    height: 4px;
+    margin-left: 6px;
+    margin-top: 23px;
+    background-image: url(http://mat1.gtimg.com/sports/nba2015_statics/public/header_nav_sprite.png);
+    background-position: -7px -56px;
+    line-height: 50px;
+}
+
+#lines{
+    float: left;
+    background-color: #004372;
+    width: 1px;
+    height: 16px;
+    margin: 18px 20px 16px
+}
+
+#menu>li{
+    padding: 0 16px;
+    position: relative;
+}
+
+/*导航栏选项卡*/
+
+#news {
+    width: 360px;
+    height: 202px;
+    padding-right: 5px;
+    background-color: #014576;
+    white-space: nowrap;
+    display: none;
+    position: absolute;
+    left: 5px;
+    top: 50px;
+    z-index: 99;
+}
+
+.news:hover > #news{
+    display: block;
+}
+
+@media screen and (max-width:1260px){
+    #news{
+        left:-5px;
+    }
+}
+
+#news>a{
+    text-decoration: none;
+}
+
+#news>a>p {
+    line-height: 40px;
+    margin:0 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #fff;
+}
+
+#news>a>P:hover {
+    color: #0088e1;
+}
+
+/*要放置在要改变的属性的后面 这个和先后顺序有关*/
+@media screen and (max-width:1260px){
+    .breakpoint{
+        /*要想padding自动改变padding只会把值定死 在这里只能改变元素的内容宽度*/
+        width: 1000px;
+    }
+    #menu>li{
+        padding: 0 5px;
+    }
+}
+
+/*弹框*/
+.friend{
+    display: none;
+    width: 400px;
+    height: 430px;
+    background-color: #fff;
+    border: 1px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -215px;
+    margin-left: -200px;
+    z-index: 99;
+}
+
+.close{
+    width: 45px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.close:hover{
+    background-color: #4bacfe;
+}
+
+.friend ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.f-menu{
+    width: 100%;
+    height: 49px;
+}
+
+.f-header li{
+    width: 50%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    line-height: 49px;
+    font-size: 20px;
+}
+
+#ali1{
+    border-bottom: 2px solid #4bacfe;
+}
+
+#ali2{
+     border-bottom: 2px solid #aaa;
+}
+
+.user1{
+    display: block;
+    text-align: center;
+}
+
+.user1 img{
+    /*border: 1px solid black;*/
+    width: 134px;
+    height: 134px;
+}
+
+#img1{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 5;
+    transition: all 1s ease-in-out;
+}
+
+#img1:hover{
+    left: -95px;
+}
+
+#plate{
+    position: absolute;
+    right: 55px;
+    width: 134px;
+    height: 134px;
+    background-color: #fff;
+    z-index: 2;
+    opacity:1;
+    transition: opacity 1s ease-in-out 0.2s;
+}
+
+#img2{
+    position: absolute;
+    right: 55px;
+    z-index: 1;
+    /*background-image: url(http://qq.yh31.com/tp/zjbq/201707101726057186.jpg);
+    background-size: 134px 134px;*/
+}
+
+#img1:hover + #plate{
+    opacity: 0;
+}
+
+.user2{
+    display: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+.user2 img{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.user2 p{
+    margin: 5px;
+} 
+
+.f-footer{
+    display: block;
+}
+
+.safety{
+     font-size: 25px;
+}
+
+.qq{
+    font-size: 16px;
+}
+.qq>a{
+    color: #4bacfe;
+    text-decoration: none;
+}
+.qq>a:hover{
+    text-decoration: underline;
+}
+
+.f-footer{
+    position: absolute;
+    width: 100%;
+    height:24px;
+    bottom: 0;
+    margin-bottom: 5px; 
+}
+
+.f-footer label{
+    float: left;
+}
+
+.f-footer>label>input{
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+
+
+.f-footer ul{
+    float: right;
+    padding-top: 6px;
+    padding-right: 8px;
+}
+
+.f-footer li{
+    float: left;
+    font-size: 12px;
+    color: #aaa;
+}
