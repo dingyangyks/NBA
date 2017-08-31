@@ -1,0 +1,205 @@
+/*商品展示*/
+.wareShow_wrap{
+    width: 1200px;
+    /*height: 300px;*/
+    margin: 10px auto;
+    /*border: 1px solid red;*/
+}
+
+.wareShow{
+    width: 100%;
+    margin: 0 0 10px 0;
+    /*background-color: #aaa;*/
+    border-bottom: 2px solid orange;
+    
+}
+
+.wareTittle{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.wareLogo{
+    width: 30px;
+    padding-right: 5px;
+    vertical-align:bottom;
+}
+
+.more{
+    float: right;
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+.more a{
+    color: black;
+}
+
+.wareContent{
+    height: 412px;
+    font-size: 0;
+    border-top: 1px solid #aaa;
+}
+
+.wareContent_left{
+    width: 210px;
+    height: 400px;
+    overflow: hidden;
+    float: left;
+    
+}
+
+.pic img{
+    width: 210px;
+    height: 400px;
+}
+
+
+/*手机展示*/
+
+.wareContent_right{
+    font-size: 0;
+    float: left;
+    width: 988px;
+    /*height: 410px;*/
+}
+
+.phoneShow{
+    float: left;
+    padding: 56px 56px 30px 56px;
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+.ware_descript{
+    padding-top: 10px;
+}
+
+.price{
+    color:orange;
+}
+
+.wareUpShow{
+    width: 990px;
+    /*height: 297px;*/
+}
+
+.wareDownShow{
+    font-size: 0;
+}
+
+.recommend{
+    width: 235px;
+    height: 103px;
+    padding: 10px 0 0 10px;
+    border:1px solid #aaa;  
+    float: left;
+    border-bottom: 0; 
+}
+
+.recommend img{
+    width: 80px;
+    float: left;
+}
+
+.recommend p{
+    font-size: 18px;
+}
+
+/*食品酒水*/
+.wareContent_left img{
+    width: 210px;
+}
+
+.foodShow{
+    float: left;
+    /*padding: 56px 56px 30px 56px;*/
+    text-align: center;
+    border: 1px solid #aaa;
+}
+
+.foodShow img{
+    width: 183px;
+    padding: 20px 29px 0 33px;
+}
+
+.foodRecommend{
+    width: 235px;
+    height: 106px;
+    padding: 31px 0 0 10px;
+    border:1px solid #aaa; 
+    border-bottom: 0; 
+    float: left;
+}
+
+.foodRecommend img{
+    margin-right: 5px;
+    width: 80px;
+    float: left;
+}
+
+.plusHeight{
+    height: 400px;
+}
+
+/*底部版权区*/
+.copyright_wrap{
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+}
+
+.copyright_main{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.copyright_main a{
+    color: #000;
+}
+
+.copyright_main img{
+    width: 90px;
+}
+
+.copyright_main ul{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.copyright_main li{
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+/*侧边栏*/
+.sideBox{
+    position: fixed;
+    bottom: 161px;
+    right: 136px;
+    display: none;
+    /*opacity: 0;*/
+}
+
+.sideBox a{
+    color:#207ada;
+}
+
+.sideBox li{
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #aaa;
+    text-align: center;
+}
+
+.sideBox li img{
+    width: 40px;
+    height: 40px;
+}
+
+

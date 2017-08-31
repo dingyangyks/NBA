@@ -1,0 +1,159 @@
+/*商品分类 轮播图区*/
+.classify{
+    width: 1200px;
+    height: 340px;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+}
+
+.ware_classify{
+    width: 210px;
+    height: 340px;
+    background-color: #207ada;
+    display: inline-block;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+
+.turnImg{
+    float: left;
+    width: 790px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    /*border: 1px solid blue;*/
+}
+
+.classify_ad{
+    float: right;
+}
+
+.girls{
+    width: 180px;
+    padding-bottom: 28px;
+}
+
+.chocolate{
+    width: 180px;
+    height: 67px;
+    padding-left: 0px;
+}
+
+/*轮播图*/
+.img_ul{
+    font-size: 0px;
+    height: 340px;
+    /*border: 1px solid black;*/
+    position: relative;
+    left: 0;
+}
+
+.img_ul li{
+    float: left;
+}
+
+.turnImg_left_btn,.turnImg_right_btn{
+    width: 45px;
+    height: 105px;
+    /*border: 1px solid #fff;*/
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    opacity: 0;
+    transition:opacity 0.5s ease-in;
+    z-index: 2;
+}
+
+.turnImg:hover > .turnImg_left_btn,
+.turnImg:hover > .turnImg_right_btn,
+.turnImg:hover > .imgPoint{
+    opacity: 1;
+}
+
+.turnImg_left_btn{
+    background: rgba(158, 158, 158, 0.3) url(img/icon/focus_control_btn.png) center 24px no-repeat;
+}
+
+.turnImg_right_btn{ 
+    right:0;
+    background: rgba(158, 158, 158, 0.3) url(img/icon/focus_control_btn.png) center -174px no-repeat;
+}
+
+/*轮播图的点*/
+.imgPoint{
+    position: absolute;
+    top:80%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,0);
+    transition:opacity 0.5s ease-in;
+}
+
+.imgPoint i{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin:15px;
+    float: left;
+    border-radius: 50%;
+    background-color: rgba(158, 158, 158, 0.3);
+}
+.imgPoint i.select {
+    background-color: #ea8736;
+}
+
+/*商品分类列表*/
+.ware_classify a{
+    color: #fff;
+}
+
+.ware_classify ul{
+    padding-top: 1px;
+    font-size: 17px;
+}
+
+.firstTittle{
+    padding: 9px 14px 8px 14px;
+    border-bottom: 1px  solid #2369ae;
+}
+
+.firstTittle:hover{
+    background-color: #e7e7e7;
+    border-bottom: 1px  solid #e7e7e7;
+
+}
+
+.firstTittle:hover>a,.firstTittle:hover>strong>a{
+    color: #000;
+}
+
+/*详细分类*/
+.details{
+    position: absolute;
+    left: 210px;
+    top: 0px;
+    width: 800px;
+    height: 340px;
+    background-color: #e7e7e7;
+    z-index: 5;
+    display: none;
+}
+
+.smallTittle strong{
+    color: #207ada;
+}
+
+.details a{
+    margin: 0 5px;
+    color: #555;
+}
+
+.details li{
+    margin: 8px;
+    padding-bottom: 7px;
+    float: left;
+    border-bottom: 1px  solid #aaa;
+}
+
+

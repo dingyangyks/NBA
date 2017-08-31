@@ -189,8 +189,9 @@ window.addEventListener('load', function () {
             if(document.body.scrollTop <= 0){
                 clearTimeout(backtime);
             }else{
-                document.body.scrollTop = newScro - 20
+                document.body.scrollTop = newScro - 20;
             }
          },5)
     })
+
 })
