@@ -1,0 +1,145 @@
+.plan{
+    margin:32px 230px 0 0;
+    float: right;
+}
+
+.logistics_wrap{
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.logTittle{
+    display: inline-block;
+    width: 1180px;
+    background-color: #ccc;
+    /*margin: 10px 0;*/
+    margin-top:0px;
+    padding-left: 20px;
+    border-bottom: 1px solid #aaa;
+}
+
+.Record{
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    overflow:hidden;
+}
+
+.receivedContent{
+    margin: 15px 0;
+}
+
+.address{
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.rec_left{
+    float: left;
+    margin-left: 30px;
+    width: 70px;
+    text-align: right;
+}
+
+.rec_right{
+    margin-left: 115px;
+}
+
+.sureAddress{
+    margin: 30px 0 20px 33px;
+}
+
+.payType{
+    padding-left: 30px;
+    font-size: 18px;
+}
+
+.payType input{
+    margin: 15px 0;
+    
+}
+
+.invoice_select{
+    padding-bottom: 2px;
+    background-color: #fff;
+}
+
+.invoice input{
+    padding: 4px 0 0 0;
+    margin: 0;
+    border: 1px solid #ccc;
+}
+
+.invoice{
+    margin-left: 30px;
+}
+
+.invoice_wrap{
+    margin: 20px 0;
+}
+
+/*表格布局*/
+.wareList_table{
+    display: table;
+    width: 100%;
+}
+
+.wareList_tr{
+    display: table-row;
+}
+
+.wareList_th{
+    display: table-cell;
+    height: 30px;
+    font-weight: bold;
+    /*width: 100px;*/
+    height: 100%;
+    border: 1px solid gray;
+    text-align: center;
+    vertical-align: middle;
+    background-color:#E5E5E5;
+}
+
+.wareList_td{
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    padding-top: 10px;
+}
+
+.wareList_td>img{
+    margin:0 30px 10px 30px;
+    width: 80px;
+    float: left;
+}
+.wareList_td>p{
+    text-align: left;
+}
+
+.wareList_td>p>a{
+    color: #3d8af4;
+}
+
+.totalWord{
+    color: #555;
+}
+
+.totalCount{
+    font-size: 30px;
+    color: #e03906;
+}
+
+.total{
+    float: right;
+    margin-right: 30px;
+}
+
+.submitMoney{
+    background-color: #e03906;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+
+   

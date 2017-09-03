@@ -1,90 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style type="text/css">
-       .wrap{
-           border: 1px solid red;
-           padding: 10px;
-           /*overflow: hidden;*/
-           /*overflow: auto;*/
-           margin-bottom: 20px;
-           display: table;
-           /*float: left;*/
-           /*font-size: 0;*/
-       }
-       .div1{
-           width: 100px;
-           height: 100px;
-           border: 1px solid blue;
-           /*display: inline-block;*/
-           /*vertical-align: bottom;*/
-           float: left;
-           /*clear: left;*/
-           
-       }
-       .div2{
-           width: 200px;
-           height: 300px;
-           border: 1px solid orange;  
-           float: left;
-           /*clear: both;*/
-           /*display: inline-block;*/
-           /*vertical-align: middle;*/
-           
-                    
-       }
-       .div3{
-           width: 400px;
-           height: 400px;
-           border: 1px solid green; 
-           float: left;
-           /*display: inline-block;*/
-                     
-       }
-
-       .div4{
-           width: 100px;height: 100px;
-           border: 1px solid green; 
-           float: left;
-       }
-
-       .div5{
-           border: 1px solid orange;  
-           margin-left: 120px;
-           
-       }
-
-       .div6{
-           border: 1px solid red;  
-           margin-left: 120px;
-       }
-
-       h1{
-           clear: both;
-       }    
-       /*空标签清除浮动*/
-       </style>
-</head>
-<body>
-    <div class="wrap">
-        <div class="div1">1</div>
-        <div class="div2">2</div>
-        <div class="div3">3</div>
-        <!--<br clear = "all"/>  -->
-        <!--<h1></h1>-->
-        
-    </div>
-
-    <div class="wrap">
-        <div class="div4">4</div>
-        <div class="div5">5</div>
-        <div class="div6">6</div>
-    </div>
-</body>
-
-</html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="UTF-8">
+ <title>display普通表格</title>
+ <style type="text/css">
+ .table, .table * {margin: 0 auto; padding: 0;font-size: 14px;font-family: Arial, 宋体, Helvetica, sans-serif;}
+ .table {display: table; width: 80%; border-collapse: collapse;}
+ .table-tr {display: table-row; height: 30px;}
+ .table-th {display: table-cell;font-weight: bold;height: 100%;border: 1px solid gray;text-align: center;vertical-align: middle;background-color:#E5E5E5;}
+ .table-td {display: table-cell; height: 100%;border: 1px solid gray; text-align: center;vertical-align: middle;}
+ </style>
+ </head>
+ <body>
+     <div class="table">
+         <div class="table-tr">
+             <div class="table-th">省份/直辖市</div>
+             <div class="table-th">GDP(亿元)</div>
+             <div class="table-th">增长率</div>
+         </div>
+         <div class="table-tr">
+             <div class="table-td">广东</div>
+             <div class="table-td">72812</div>
+             <div class="table-td">8.0%</div>
+         </div>
+         <div class="table-tr">
+             <div class="table-td">河南</div>
+             <div class="table-td">37010</div>
+             <div class="table-td">8.3%</div>
+         </div>
+         <div class="table-tr">
+             <div class="table-td">江苏</div>
+             <div class="table-td">70116</div>
+             <div class="table-td">8.5%</div>
+         </div>
+     </div>
+ </body>
+ </html>

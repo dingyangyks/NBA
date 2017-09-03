@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="电商,促销,折扣,手机">
+    <meta name="description" content="一个折扣优惠大的商品网站">
+    <title>物流页</title>
+    <link rel="stylesheet" href="headTop.css">
+    <link rel="stylesheet" href="classify.css">
+    <link rel="stylesheet" href="wareShowWrap.css">
+    <link rel="stylesheet" href="logistics.css">
+
+    <!--引入myfoucs-->
+    <script src="/home/wy/code/ding/NBA/电商网站/myfocus/js/myfocus-2.0.1.min.js"></script>
+    <script src="/home/wy/code/ding/NBA/电商网站/myfocus/js/mf-pattern/mF_games_tb.js"></script>
+    <link rel="stylesheet" href="/home/wy/code/ding/NBA/电商网站/myfocus/js/mf-pattern/mF_games_tb.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!--顶部-->
+        <div class="top" id="top">
+            <div class="top_left">
+                <i class="Collection_star"></i>
+                <p>收藏慕课</p>
+            </div>
+            <div class="top_right">
+                <p>欢迎来到慕课网!</p>
+                <a href="#">[登录] 免费注册</a>
+            </div>
+        </div>
+        <!--logo区-->
+        <div class="logo_wrap">
+            <div class="head">
+                <img src="img/images/logo.jpg" alt="慕课网logo" class="logo">
+                <div class="plan">
+                    <img src="img/icon/step.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="logistics_wrap">
+            <div class="Record">
+                <h3 class="logTittle">收货信息</h3>
+                <div class="receivedContent">
+                    <div class="rec_left">选择地区:</div>
+                    <div class="rec_right">
+                        <select class="address" name="" id="">
+                            <option  value="">北京市 海淀区 五环内</option>
+                            <option  value="">西安市 碑林区 三环内</option>
+                            <option  value="">长沙市 岳麓区 三环内</option>
+                            <option  value="">南昌市 前湖区 三环内</option>
+                            <option  value="">宜昌市 猇亭区 三环内</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="receivedContent">
+                    <div class="rec_left">详细地址:</div>
+                    <div class="rec_right">
+                        <input type="text" placeholder="最多输入26个汉字">
+                    </div>
+                </div>
+                <div class="receivedContent">
+                    <div class="rec_left">收货人:</div>
+                    <div class="rec_right">
+                        <input type="text" placeholder="最多是个汉字">
+                    </div>
+                </div>
+                <div class="receivedContent">
+                    <div class="rec_left">手机:</div>
+                    <div class="rec_right">
+                        <input type="text" placeholder="如123456789">
+                    </div>
+                </div>
+                <div class="sureAddress">
+                    <img src="img/images/sh_bg.gif" alt="">
+                </div>
+            </div>
+            <div class="Record">
+                <h3 class="logTittle">支付方式</h3>
+                <div class="payType">
+                    <input type="radio" name="paytype">微信支付 用微信扫一扫可支付
+                    <br/>
+                    <input type="radio" name="paytype">货到付款 送货上门后再付款,使用现金或刷银行卡
+                </div>
+            </div>
+            <div class="Record">
+                <h3 class="logTittle">发票信息</h3>
+                <div class="invoice">
+                    <div class="invoice_wrap">
+                        <input type="checkbox">需要发票<br/>
+                    </div>
+                    <div class="invoice_wrap">
+                         发票类型:
+                        <select name="" id="" class="invoice_select">
+                            <option value="">商业零售发票</option>
+                            <option value="">个人零售发票</option>
+                            <option value="">企业发票</option>
+                        </select><br/>
+                    </div>
+                    <div class="invoice_wrap">
+                        发票抬头:
+                        <select name="" id="" class="invoice_select">
+                            <option value="">个人</option>
+                            <option value="">商业</option>
+                            <option value="">企业</option>
+                        </select>
+                        <input type="text" placeholder="阿斯顿">
+                        <br/>
+                    </div>
+                </div>
+            </div>
+            <div class="Record">
+                <h3 class="logTittle">送货清单</h3>
+                <div class="wareList_table">
+                    <div class="wareList_tr">
+                        <div class="wareList_th">商品名称</div>
+                        <div class="wareList_th">单价</div>
+                        <div class="wareList_th">返现</div>
+                        <div class="wareList_th">数量</div>
+                        <div class="wareList_th">小计</div>
+                    </div>
+                     <div class="wareList_tr">
+                        <div class="wareList_td">
+                            <img src="img/images/shopImg.png" alt="">
+                            <p>海信 三门冰箱 银色</p>
+                            <p>[赠品] 保鲜盒,抽真空,海信冰洗赠品</p>
+                            </br>
+                            <p><a href="">若您对包装有特殊要求,请在此留言</a></p>
+                        </div>
+                        <div class="wareList_td">&yen;1459.00</div>
+                        <div class="wareList_td">&yen;0.00</div>
+                        <div class="wareList_td">1</div>
+                        <div class="wareList_td">&yen;1459.00</div>
+                    </div>
+                </div>
+            </div>
+            <div class="Record">
+                <h3 class="logTittle">订单结算</h3>
+                <div class="total">
+                    <span class="totalWord">总计</span>
+                    <span><strong class="totalCount">&yen;1459.00</strong></span>
+                    <div class="submitMoney">提交订单</div>
+                </div>
+            </div>
+        </div>
+        <!--底部版权区-->
+        <div class="copyright_wrap">
+            <div class="copyright_main">
+                <p>
+                    <a href="#">慕课简介</a> |
+                    <a href="#">慕课公告</a> |
+                    <a href="#">招贤纳士</a> |
+                    <a href="#">联系我们</a> | 客服热线:400-675-1234
+                </p>
+                <p>Copyright © 2004 - 2017 京东JD.com 版权所有|消费者维权热线：4006067733经营证照</p>
+                <ul>
+                    <li><img src="img/1a.jpg" alt=""></li>
+                    <li><img src="img/2a.jpg" alt=""></li>
+                    <li><img src="img/3a.jpg" alt=""></li>
+                    <li><img src="img/4a.jpg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="searchAJAX.JS"></script>
+    <script src="turnImg.js"></script>
+</body>
+</html>
