@@ -1,0 +1,86 @@
+/*登录 注册页*/
+.login_tittle{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.login{
+    width: 410px;
+    border: 1px solid #ccc;
+    margin: 10px auto 50px auto;
+    font-size: 20px;
+    position:relative;
+}
+
+.login p{
+    text-align: left;
+    font-size: 20px; 
+    padding-left: 60px;  
+}
+
+.login_item{
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.login_input{
+    width: 250px;
+    height: 20px;
+    
+}
+
+.login_item a{
+    color:#207ada;
+}
+
+.login_btn{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+}
+
+.toSign{
+    width: 80px;
+    height: 40px;
+    background:#6dd70e;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*注册*/
+
+.login_name{
+    width:85px;
+    float: left;
+    font-size: 16px;
+    text-align: right;
+    margin-left: 10px;
+}
+
+.sign_input{
+    margin-left: -70px;
+}
+
+/*.login_wrap{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate((-50%,-50%));
+}*/
+
+.sign_input_content{
+    font-size: 16px;
+}
+
+.sign_btn{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+}
