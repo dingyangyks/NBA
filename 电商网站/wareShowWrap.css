@@ -72,6 +72,10 @@
     border: 1px solid #aaa;
 }
 
+.phoneShow a,.recommend a{
+    color: #000;
+}
+
 .ware_descript{
     padding-top: 10px;
 }
@@ -119,6 +123,10 @@
     border: 1px solid #aaa;
 }
 
+.foodShow a{
+    color: #000;
+}
+
 .foodShow img{
     width: 183px;
     padding: 20px 29px 0 33px;
@@ -131,6 +139,10 @@
     border:1px solid #aaa; 
     border-bottom: 0; 
     float: left;
+}
+
+.foodRecommend a{
+    color:#000;
 }
 
 .foodRecommend img{
